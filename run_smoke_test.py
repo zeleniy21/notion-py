@@ -21,3 +21,4 @@ if __name__ == "__main__":
         print(
       "Must either pass --token option or set NOTION_TOKEN environment variable"
         )
+   sys.exit(1)
