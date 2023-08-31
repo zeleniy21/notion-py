@@ -11,3 +11,6 @@ if __name__ == "__main__":
         "--page", dest="page", help="page URL or ID", required=True, type=str
     )
     parser.add_argument("--token", dest="token", help="token_v2", type=str)
+args = parser.parse_args()
+
+    token = args.token
