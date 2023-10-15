@@ -19,3 +19,7 @@ if __name__ == "__main__":
     token = args.token
     if not token:
         # if you don't want your terminal to be filled with messy token, then input your token_v2 at "NOTION_TOKEN"
+ token = os.environ.get("NOTION_TOKEN")
+    if not token:
+        print(
+            "Must either pass --token option or set NOTION_TOKEN environment variable"
