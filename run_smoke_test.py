@@ -15,3 +15,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--token", dest="token", help="token_v2", type=str)
     args = parser.parse_args()
+
+    token = args.token
+    if not token:
+        # if you don't want your terminal to be filled with messy token, then input your token_v2 at "NOTION_TOKEN"
