@@ -23,3 +23,7 @@ if __name__ == "__main__":
     if not token:
  print(
             "Must either pass --token option or set NOTION_TOKEN environment variable"
+  )
+        sys.exit(1)
+
+    run_live_smoke_test(token, args.page)
