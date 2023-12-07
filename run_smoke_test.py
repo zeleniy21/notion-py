@@ -26,3 +26,5 @@ token = os.environ.get("NOTION_TOKEN")
     if not token:
         print(
             "Must either pass --token option or set NOTION_TOKEN environment variable"
+ )
+        sys.exit(1)
